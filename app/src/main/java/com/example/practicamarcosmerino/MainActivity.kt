@@ -48,7 +48,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Col() {
-    var contador by remember { mutableStateOf(0) }
+    var contador by rememberSaveable { mutableStateOf(0) }
     LazyColumn(
         modifier = Modifier.fillMaxSize().background(color = Color.Gray),
         horizontalAlignment = Alignment.CenterHorizontally,
